@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Action: Registro 1/3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style/registro.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="subscripcion" class="col-12 col-s-12">
+      <img id="logo" src="images/logo.png" alt="logo"/>
+      <div>
+        <b id="b">PASO DE <span style="color: red">1</span> DE
+          <span style="color: red">3</span></b
+        >
+      </div>
+      <div id="contsub">
+        <p id="p">REGÍSTRATE</p>
+        <br />
+        <form action="pago.html">
+          <input 
+            id="NombreApellidos"
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+            onsubmit="almacenar()"
+            required
+          />
+          <input
+            id="Apellidos"
+            type="text"
+            name="apellidos"
+            placeholder="Apellidos"
+            onsubmit="almacenar()"
+            required
+          />
+          <br /><br /><br />
+          <input
+            
+            id="email2"
+            type="email"
+            name="correo electrónico"
+            placeholder="Correo electrónico"
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+            required
+          />
+          <br /><br /><br />
+          <input
+           
+            id="password2"
+            type="password"
+            name="contraseña"
+            placeholder="Contraseña"
+            required
+          />
+          <br /><br /><br />
+          <input
+            type="submit"
+            value="CONTINUA"
+            id="continuar"
+            onclick="saveFormData();"
+            
+          />
+          <br /><br />
+        </form>
+      </div>
+      <!--<div id="contsub2">
+				<p>SELECCIONA PLAN!</p>
+				<br>
+				<div class="planes"></div>
+				<div class="planes"></div>
+			  
+			</div>-->
+    </div>
+    <script src="script/registro.js"></script>
+  </body>
+</html>

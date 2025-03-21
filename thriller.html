@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title> Action! Categorías: Thrillers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" type='text/css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header class="cabecera_principal">
+		<div id="menu_popup">
+			<ul class="navbar_popup">
+				<li class="active"><a href="Pagina_inicio.html">Inicio</a></li>
+				<li><a href="Pagina_peliculas.html">Películas</a></li>
+				<li><a href="Pagina_series.html">Series</a></li>
+				<li><a href="Mis_favoritos.html">Mis favoritos</a></li>
+				<li><a href="Visto_recientemente.html">Visto recientemente</a></li>
+				<li><a href="Sigue_viendo.html">Sigue viendo</a></li>
+			</ul>
+		</div><!--popup del menu principal-->
+
+		<a href="#" id="menu_icon"><i class="fa fa-bars"></i></a>
+		<a href="Pagina_inicio.html"><img src="images/logo.png" alt="logo" id="logo"></a>
+		<ul class="navbar">
+			<li><a href="Pagina_inicio.html" class=" inicio navegacion_inicio" id="active">Inicio</a></li>
+			<li><a href="Pagina_peliculas.html" class="peliculas navegacion_inicio">Películas</a></li>
+			<li><a href="Pagina_series.html" class="series navegacion_inicio">Series</a></li>
+			<li><a href="Mis_favoritos.html" class="favoritos navegacion_inicio">Mis favoritos</a></li>
+			<li><a href="Visto_recientemente.html" class="visto navegacion_inicio">Visto recientemente</a></li>
+			<li><a href="Sigue_viendo.html" class="viendo navegacion_inicio">Sigue viendo</a></li>
+		</ul>
+		<div class="main">
+	        <input class="hidden-mobile" type="text" id="input" placeholder="Buscar...">
+	        <button id="search"><i class="fa fa-search"></i></button>
+	        <span id="nombre">Usuario</span><img src="images/fotoperfil.png" alt="user_icon" id="usuario"> 
+		</div>
+	</header>
+	<div class="col-12 col-s-12" id="layout">
+
+		<div id="popup_usuario">
+			<ol class="lista_consultas">
+				<li class="consulta_usuario1" onclick="irAeditar()"><img src="images/fotoperfil.png" alt="user_icon" id="consultar_usuario"> Usuario</li>
+				<li onclick="irInfantil();">Activar modo infantil</li>
+				<li>Centro de ayuda</li>
+				<li id="cerrar_sesion">Cerrar sesión</li>
+			</ol>
+		</div>
+		
+		<div id="boton_categorias">
+			<p>Categorias</p><i class="fa fa-caret-right"></i>
+		</div><!-- boton de categorias-->
+
+		<div id="popup_categorias">
+			<p id="cerrar_categorias">X</p>
+			<ul>
+				<li><a href="tendencias.html">Tendencias</a></li>
+				<li><a href="lo_nuevo.html">Lo nuevo</a></li>
+				<li><a href="musicales.html">Musicales</a></li>
+				<li><a href="terror.html">Terror</a></li>
+				<li><a href="comedia.html">Comedia</a></li>
+				<li><a href="drama.html">Drama</a></li>
+				<li><a href="animacion.html">Animación</a></li>
+				<li><a href="thriller.html">Thriller</a></li>
+				<li><a href="documentales.html">Documentales</a></li>
+				<li><a href="por_pais.html">Por país</a></li>
+			</ul>
+		</div><!--popup categorias-->
+
+		<div class="col-3">
+			<nav id="menuvertical">
+				<ul>
+					<li><a href="tendencias.html">Tendencias</a></li>
+					<li><a href="lo_nuevo.html">Lo nuevo</a></li>
+					<li><a href="musicales.html">Musicales</a></li>
+					<li><a href="terror.html">Terror</a></li>
+					<li><a href="comedia.html">Comedia</a></li>
+					<li><a href="drama.html">Drama</a></li>
+					<li><a href="animacion.html">Animación</a></li>
+					<li><a href="thriller.html" class="seleccionado">Thriller</a></li>
+					<li><a href="documentales.html">Documentales</a></li>
+					<li><a href="por_pais.html">Por país</a></li>
+				</ul>
+			</nav>	
+		</div>
+		<div class="col-9 col-s-12" id="contenido">
+			<p id="titulo_inicio">THRILLER</p>
+			<div class="videos col-12 col-s-12">
+				<!--PRIMER CARRUSEL-->
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<p class="titulo">Thrillers psicológicos</p>
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_126.jpeg" alt="anabel" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_127.jpg" alt="el orfano" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img  src="images/image_130.jpg" alt="la purga" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 1-->
+						</div><!--fin item 1-->
+						<div class="item">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_140.jpg" alt="super lopez" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_143.jpeg" alt="ted" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img src="images/imgserie_4.jpg" alt="the simpsons" class="image">
+									<button class="boton_anadir" ><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 2-->
+						</div><!--fin item 2-->
+						<div class="item">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_110.jpg" alt="candyman" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_104.jpg" alt="un sueño para holly" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img src="images/image_172.jpg" alt="loving pablo" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 3-->
+						</div><!--fin item 3-->
+					</div><!--fin carousel-inner 1-->
+					 <button class="carousel-control-prev boton_anterior" type="button" data-target="#myCarousel" data-slide="prev">
+				   		<i class="fa fa-chevron-left"></i>
+				  	</button>
+				  	<button class="carousel-control-next boton_siguiente" type="button" data-target="#myCarousel" data-slide="next">
+				    	<i class="fa fa-chevron-right"></i>
+				  	</button>
+				</div><!--fin carousel 1-->
+
+
+				<!--SEGUNDO CARRUSEL-->
+				<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+					<p class="titulo">Ambientados en londres</p>
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_136.jpg" alt="crazy stupid love" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_135.jpg" alt="witches" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img src="images/image_149.jpeg" alt="american pie" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 1-->
+						</div><!--fin item 1-->
+						<div class="item">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_170.jpg" alt="ocho apellidos vascos" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_171.jpg" alt="el irlandes" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img src="images/image_168.jpg" alt="murder mystery" class="image">
+									<button class="boton_anadir" ><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 2-->
+						</div><!--fin item 2-->
+						<div class="item">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_165.jpeg" alt="hangover" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_167.jpeg" alt="superbad" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img src="images/image_155.png" alt="principe en nueva york" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 3-->
+						</div><!--fin item 3-->
+					</div><!--fin carousel-inner 2-->
+					 <button class="carousel-control-prev boton_anterior" type="button" data-target="#myCarousel2" data-slide="prev">
+				   		<i class="fa fa-chevron-left"></i>
+				  	</button>
+				  	<button class="carousel-control-next boton_siguiente" type="button" data-target="#myCarousel2" data-slide="next">
+				    	<i class="fa fa-chevron-right"></i>
+				  	</button>
+				</div><!--fin carousel 2-->
+
+				<!--TERCER CARRUSEL-->
+				<div id="myCarousel3" class="carousel slide" data-ride="carousel">
+					<p class="titulo">Nuevos</p>
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_57.jpg" alt="animales fantasticos" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_59.jpg" alt="jurassic world dominion" class="image"> 
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img src="images/image_60.jpg" alt="la princesa" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 1-->
+						</div><!--fin item 1-->
+						<div class="item">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_61.jpg" alt="persuasion" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_45.jpg" alt="Gone in 60 Seconds" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img src="images/image_47.jpg" alt="black widow" class="image">
+									<button class="boton_anadir" ><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 2-->
+						</div><!--fin item 2-->
+						<div class="item">
+							<div class="slides">
+								<div class="video col-4 col-s-4">
+									<img src="images/image_2.jpg" alt="dahmer" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						     	<div class="video col-4 col-s-4"> 
+									<img src="images/image_4.jpg" alt="1889" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+						      	</div>
+						      	<div class="video col-4 col-s-4">   
+									<img src="images/image_11.jpg" alt="the Wither" class="image">
+									<button class="boton_anadir"><i class="fa fa-plus" title="Añadir a Mis favoritos"></i></button>
+								</div>
+							</div><!--fin slide 3-->
+						</div><!--fin item 3-->
+					</div><!--fin carousel-inner 3-->
+					 <button class="carousel-control-prev boton_anterior" type="button" data-target="#myCarousel3" data-slide="prev">
+				   		<i class="fa fa-chevron-left"></i>
+				  	</button>
+				  	<button class="carousel-control-next boton_siguiente" type="button" data-target="#myCarousel3" data-slide="next">
+				    	<i class="fa fa-chevron-right"></i>
+				  	</button>
+				</div><!--fin carousel 3-->
+		    </div><!--fin div videos-->
+		</div><!--fin div contenido-->
+	</div><!--fin div layout-->
+
+	<!--POP UP DE CERRAR SESION-->
+	<div id="popup_cerrar_sesion">
+		<div id="info_cerrar_sesion">  
+			<span id="cerrar"> X </span>
+			<h1 class="resaltado">¿ESTÁS SEGURO DE QUE QUIERES CERRAR SESIÓN?</h1>
+			<p class="resaltado1">Tendrás que iniciar sesión de nuevo</p><br>
+			<p class="resaltado2">No es necesario cerrar sesión si estás usando tu ordenador personal</p>
+			<button id="boton_aceptar" onclick="cerrarSes()">Aceptar</button>
+			<button id="boton_cancelar">Cancelar</button>
+		</div>
+	</div>
+
+	<script src="script/script.js"></script>
+</body>
+</html>

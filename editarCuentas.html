@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Action! Editar perfiles</title>
+	<link rel=StyleSheet href="style/seleccionaCuenta.css" type="text/css" media=screen>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+	
+	<div>
+		<header>
+			<img src="images/logo.png" alt="Logo plataforma, claqueta de acción">
+			<form class="cambioPantalla" action="seleccionaPerfil.html" id="SeleccionaPerfil.html" ><button onclick="href='editarCuentas.html">Volver  ></button></form>
+		</header>
+		
+		<section>
+			<div class="usuario">
+				<input class="fotoPerfil" id="perfil1" type="image" alt="fotoPerfil" src="images/default.png" />
+				<p id="nombre1edit">Usuario</p>
+				<form class=cambioPantalla action="edicion.html">
+					<button class="editar" onclick="href='edicion.html">Editar</button>
+				</form>
+			</div>
+			
+
+			<div class="usuarioinfantil">
+				<form action="edicionInfantil.html">
+				<input id="perfilinfantil" class="fotoPerfil" alt="fotoPerfil" type="image" src="images/icon2.png">
+				</form>
+				<p id="nombre2edit">Usuario Infantil</p>
+				<form class=cambioPantalla action="edicionInfantil.html">
+					<button class="editar" onclick="href='edicion.html">Editar</button>
+				</form>
+			</div>
+		</section>
+	</div>
+<script src="script/script4.js"></script>
+</body>
+
+</html>

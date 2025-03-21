@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Action! Edita tu perfil</title>
+	<link rel="stylesheet" type="text/css" href="style/edicion.css">
+	
+</head>
+
+<body onLoad="cargarIcono()">
+<div class="contenedor" id="contenedor">
+	
+	<div class="contenido" id="contenido">
+		
+		<div id="foto">
+			<form class="cambioPantalla">
+				<button id="imagen" type="submit" class="boton">
+					<img id="fotoBoton" alt="foto boton" src="images/default.png" width="250">
+				</button>
+<br>
+				 <input class="boton" id="subirFoto" type="file" name="fileupload" > 
+			</form>
+		</div>
+<br>
+
+		<div id="cont2">
+			<input id="nombre" type="text" name="nombreUsuario" placeholder="NOMBRE USUARIO">
+			<svg id="lapiz" class="iconos bi bi-pencil-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+		 				 <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+			</svg>
+		</div>
+
+<br>
+	
+		<div id="cont3">
+			<p id="idioma">Selecciona idioma</p>
+				<select id="desplegable">
+					<option value="espaniol" selected>Español</option>
+					<option value="ingles">Inglés</option>
+				</select>
+		</div>
+<br>
+
+		<form action="seleccionaPerfil.html">
+			<button id="guardar"  onclick="guardarNombre();" formaction="seleccionaPerfil.html">GUARDAR CAMBIOS</button>
+		</form>
+
+	</div>
+
+</div>
+<script src="script/script1.js"></script>
+</body>
+
+</html>
+
+
+
+

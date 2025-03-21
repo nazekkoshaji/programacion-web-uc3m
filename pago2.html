@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Action: Pago 3/3</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/pago2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div id="popup_inicio">
+		<div id="contenidos_popup">
+			<form class="opcion" id="inicioses">
+				<p id="p">FINALIZA LA COMPRA</p>
+
+				<div id="resumen">
+					<p>Resumen de compra</p>
+					<p>PLAN PREMIUM .............15.99€ al mess</p>
+				</div>
+				<p>Nombre del titular</p>
+				<input id="NombreApellidos" type="text" name="nombre" placeholder="Nombre del titular" pattern="^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$" required>
+				<br>
+				<p>Numero de tarjeta</p>
+
+				<input  type="text" name="tarjeta" id="tarjeta" maxlength="12" placeholder="Nº tarjeta" pattern="^[0-9]+$" required>
+
+				<div class="left">	
+				<p>Fecha</p>
+				
+				<input type="date" name="caducidad" id="caducidad" required>
+				</div>
+				
+				<div class="right">
+				<p>CVV</p>
+				<input 
+					type="text" name="CVV" id="cvv" maxlength="3" placeholder="CVV" required pattern="[0-9]{3}">
+				</div>
+				<br><br>
+				<br><br>
+				<br><br><br><br>
+				<input type="submit" value="REALIZAR COMPRA" id="conocenos"
+					formaction="finpago.html" onclick="saveFormData();">
+			</form>
+
+		</div>
+	</div>
+
+	<script src="script/pago2.js"></script>
+</body>

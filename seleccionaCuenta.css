@@ -1,0 +1,221 @@
+body {
+	background-color: rgba(115, 115, 115, 1);
+	font-family: Trebuchet MS;
+	color: rgba(255, 255, 255, 1);
+	width: 100%;
+
+}
+header{
+	display: flex;
+	flex-direction: row;
+}
+header img{
+	width: 120px;
+  height: 120px;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+header img:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+}
+header form{
+	text-decoration: underline white;
+	margin-left: 1070px;
+	position: relative;
+	top:50px;
+}
+header form button{
+	font-family: Trebuchet MS;
+	background-color: transparent;
+	border-style: none;
+	color: white;
+	font-size: 15px;
+	text-decoration: underline white;
+}
+header form button:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+	border-style: none;
+}
+section button{
+	background-color: rgba(55, 55, 55, 1);
+	font-size: 80px;
+ 	width: 115px;
+  height: 115px;
+ 	border-radius: 50%;
+ 	color: rgba(199, 199, 199, 1);
+ 	border:none;
+}
+button:hover{
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(203, 71, 71, 1);
+}
+div{position: relative;
+}
+section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: absolute;
+ 	top: 270%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div.usuario{
+	text-align: center;
+	margin: 40px;
+	margin-right: 80px;
+}
+div.usuarioinfantil{
+	margin-left: 80px;
+	text-align: center;
+}
+#perfilinfantil{
+	border-radius: 50%;
+	border: solid 2px blue;
+  height: 115px;
+  width: 115px;
+}
+input.fotoPerfil{
+	border: solid 1px transparent;
+  height: 115px;
+  width: 115px;
+}
+input.fotoPerfil:hover{
+		transform: scale(1.1);
+}
+button.editar{
+	width: 80px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: rgba(167, 163, 163, 1);
+	color: black;
+	font-size: 15px;
+	font-family: Trebuchet MS;
+}
+button.editar:hover{
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(55, 55, 55, 1);
+}
+#nover{
+	background-color: transparent;
+	color: transparent;
+	border-style: none;
+}
+#añadirperfil{
+	display:none;
+}
+
+
+
+
+@media (max-width: 1324px){
+  #editarPerfiles {
+    margin-left:1000px;}
+}
+
+@media (max-width: 1387px){
+  #editarPerfiles {
+    margin-left:990px;}
+}
+
+@media (max-width: 1283px){
+  #editarPerfiles {
+    margin-left:920px;}
+}
+
+@media (max-width: 1215px){
+  #editarPerfiles {
+    margin-left:860px;}
+}
+
+@media (max-width: 1154px){
+  #editarPerfiles {
+    margin-left:830px;}
+}
+
+@media (max-width: 1125px){
+  #editarPerfiles {
+    margin-left:740px;}
+}
+
+@media (max-width: 1037px){
+  #editarPerfiles {
+    margin-left:650px;}
+}
+
+@media (max-width: 946px){
+  #editarPerfiles {
+    margin-left:550px;}
+}
+
+@media (max-width: 854px){
+  #editarPerfiles {
+    margin-left:450px;}
+}
+
+@media (max-width: 815px){
+  #editarPerfiles {
+    margin-left: 300px;}
+}
+
+@media (max-width: 727px){
+  #editarPerfiles {
+    margin-left: 280px;}
+
+@media (max-width: 701px){
+  #editarPerfiles {
+    margin-left: 250px;}
+
+@media (max-width: 605px){
+  #editarPerfiles {
+    margin-left: 150px;}
+
+@media (max-width: 510px){
+  #editarPerfiles {
+    margin-left: 110px;}
+   header img{margin-left: 20px}
+   header{margin-right: 20px}
+
+@media (max-width: 496px){
+  #editarPerfiles {
+    margin-left: 100px;}
+    header{margin-left: 20px}
+469
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+

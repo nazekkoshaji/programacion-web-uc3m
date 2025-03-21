@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title> Action: Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initialscale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/pag_principal.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<header class="col-12 col-s-12">
+
+		<img id="logo" src="images/logo.png" alt="logo" class="col-3 col-s-6">
+
+
+		<nav id="idiomas" class="col-3 col-s-6">
+			
+			<button id="cambioIdiomaBtn" type="submit">Change Language</button>
+			<select name="idiomas" id="select">
+				<option  value="espanol"> Español </option>
+				<option value="ingles" selected> Inglés </option>
+			</select>
+			<form><input type="submit" value="Sign In" formaction="inicio.html" id="boton"></form>
+		</nav>
+
+
+		<div id="bienvenida" class="col-6 col-s-12">
+			<h1>Movies, series and anything you want to watch</h1>
+			<h2>¿Are you ready? Enter your email to register</h2>
+			<form>
+					<input style="background-color:#A7A7A7; width: 250px; height: 35px" type="email"
+						name="correo electrónico" placeholder="Email Address"
+						pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+						required>
+					<input type="submit" value="Register" formaction="registro.html"
+						style="background-color:#CB4747; color:white; height: 35px">
+				</form>
+		</div>
+		</div>
+
+	</header>
+
+
+	<div id="videos" class="col-12 col-s-12">
+		<div id="videos1" class="col-12 col-s-12">
+			<div id="video1">
+				<img id="img1" class="imagen" src="images/p3.png" alt="jeffrey_dahmer">
+			
+			</div>
+			<div id="video2">
+				<img id="img2" class="imagen" src="images/p2.png" alt="i_came_by">
+				
+			</div>
+			<div id="video3">
+				<img id="img3" class="imagen" src="images/p1.png" alt="pelicula_comica">
+				
+			</div>
+			<br>
+			<div id="video4">
+				<img id="img4" class="imagen" src="images/p4.png" alt="pelicula_militar">
+				
+			</div>
+			<div id="video5">
+				<img id="img5" class="imagen" src="images/p5.png" alt="pelicula_romantica">
+				
+			</div>
+			<div id="video6">
+				<img id="img6" class="imagen" src="images/p6.png" alt="pelicula_suspense">
+				
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="postbienvenida" class="col-12 col-s-12">
+		<div id='pb1' class="col-3 col-s-3"><img id="actionLogoAbajo" src="images/parte_logo.png" alt="parte del logo"></div>
+		<div id='pb2' class="col-9 col-s-9">
+
+			<div id='txt1'>
+				<h2>IN ANY PLACE</h2>
+				<p>Access from your television, laptop, mobile, tablet...</p>
+				<p>From the web or from the App!</p>
+			</div>
+			
+			<div id='pb3'>
+				<h2>FOR ALL THE FAMILY</h2>
+				<p>The child account option allows you to protect</p>
+				<p>to the little ones in the house of adult content.</p>
+			</div>
+
+			<div id='txt2'>
+				<h2>WITH YOUR PERSONAL AREA</h2>
+				<p>Classify the contents with likes, add them to your list</p>
+				<p>playback and save your last plays</p>
+			</div>
+
+		</div>
+	</div>
+
+
+	<footer class="col-12 col-s-12">
+
+		<div id=f1 class="col-3 col-s-3"><br>
+			<p><b>Company</b></p>
+			<p><u>Contact us</u></p>
+			<p><u>Inversors</u></p>
+			<p><u>About Action!</u></p>
+		</div>
+		<div id=f2 class="col-3 col-s-3"><br>
+			<p><b>Legal conditions</b></p>
+			<p><u>Usage Conditions</u></p>
+			<p><u>Legaly terms</u></p>
+			<p><u>Privacy and data use</u></p>
+		</div>
+		<div id=f3 class="col-3 col-s-3"><br>
+			<p><b>FAQ</b></p>
+			<p><u>What offers action?</u></p>
+			<p><u>How much action cost?</u></p>
+			<p><u>It's family friendly?</u></p>
+		</div>
+		<div id=f4 class="col-3 col-s-3"><br>
+			<p><b>Follow us</b>
+			<p><img class="rrss" src="images/ig.png" alt="red social instagram"></p>
+			<p><img class="rrss" src="images/tw.png" alt="red social twitter"></p>
+			<p><img class="rrss" src="images/tiktok.png" alt="red social tiktok"></p>
+		</div>
+	</footer>
+	<div id="modal" class="col-6 col-s-6">
+    		<div id="modalcontent">
+      			<p class="p" id="jd"><b>JEFFREY DAHMER <span id="cerrar">X</span></b></p>
+      			<a href="inicio.html" class="p" >I want to watch it</a>
+      			<hr class="p">
+      			<a href="inicio.html" class="p" >Watched</a>
+      			<hr class="p">
+      			<a href="inicio.html" class="p" >keep watching</a>
+      			
+
+      		</div>
+      	</div>
+
+	<script src="script/cambioIdioma2.js"></script>
+</body>
+	
+</html>

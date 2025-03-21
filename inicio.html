@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Action: Iniciar Sesion</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialscale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="style/inicio.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="popup_inicio" class="col-12 col-s-12">
+      <img id="logo" src="images/logo.png" alt="logo"/>
+      <div id="contenidos_popup">
+        <form class="opcion" id="inicioses" action="seleccionaPerfil.html">
+          <p id="p1">INICIAR SESIÓN</p>
+          <br/>
+          <br/>
+          <input
+            id="input1"            
+            type="email"
+            name="correo electrónico"
+            placeholder="Correo electrónico"
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+            required/>
+          <br/><br/><br/><br/>
+          <input id="input2" 
+            type="password"
+            name="contraseña"
+            placeholder="Contraseña"
+            required/>
+
+          <br/><br/><br/><br/>
+          <input
+            type="submit"
+            value="INICIAR SESIÓN"
+            id="inicioSesion" onclick="saveFormData();"/>
+           <br>
+
+           <p>¿No tienes cuenta?, <a id="a"  href="registro.html">¡Registrate!</a></p>
+          <br>
+          <span id="recuerdame"><input type="checkbox" name="recuerdame" id="input3"/> Recuérdame</span>
+
+          <br>
+
+
+        </form>
+      </div>
+    </div>
+    <script src="script/inicio.js"></script>
+  </body>
+</html>

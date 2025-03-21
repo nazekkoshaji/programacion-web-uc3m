@@ -1,0 +1,192 @@
+#logo {
+	margin: 2%;
+	width:100px;
+}
+*{font-family: geneva}
+
+#fondo{background-image: url(../images/foq.png)}
+#calif,#dislike, #like, #share{width:70px}
+#texto{color: white; margin-left: 23px; font-family: Geneva;}
+
+#texto2{color: white; font-family: Geneva;}
+#texto3{margin-top: 15px}
+#texto4{ display: flex; color: white}
+#modal1{display: block;}
+#modal2{text-align: right;display: none;}
+#botones{text-align: left;}
+button{background-color: gray; width: 150px; border: solid;border-width: 0; border-radius: 20px; height: 40px; text-align: center;}
+#contenedor2{background-color: #D7D7D7}
+#bloque1,#bloque2,#bloque3,#bloque4{display: flex}
+#ep1,#ep2,#ep3,#ep4{margin-left: 30px; width:400px; height:150px}
+#bloque4:hover{
+  transform: scale(1.1);
+  border: solid;
+  border-color: red;
+  cursor: pointer;
+}
+#bloque1:hover{
+  transform: scale(1.1);
+  border: solid;
+  border-color: red;
+  cursor: pointer;
+}
+#bloque2:hover{
+  transform: scale(1.1);
+  border: solid;
+  border-color: red;
+  cursor: pointer;
+}
+#bloque3:hover{
+  transform: scale(1.1);
+  border: solid;
+  border-color: red;
+  cursor: pointer;
+}
+
+
+
+
+
+button:hover, button:active {
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+#like, #dislike {cursor: pointer}
+
+#likeNumero{display: none;}
+
+#img{
+position: relative;
+top: 250px;
+left: 550px;
+border: solid;
+border-width: 5%;
+height:300px;
+width:400px;
+}
+
+#cont_share{display: none;
+
+
+position: fixed;
+}
+
+
+#dislikeNumero{display: none;}
+[class*="col-"] {
+	width: 100%;
+	float: left;
+	padding: 10px;
+  }
+  
+  /* For tablets: */
+  @media only screen and (min-width: 600px) {
+	#menuvertical {
+	  max-width: max-content
+	}
+  
+	.col-s-1 {
+	  width: 8.33%;
+	}
+  
+	.col-s-2 {
+	  width: 16.66%;
+	}
+  
+	.col-s-3 {
+	  width: 25%;
+	}
+  
+	.col-s-4 {
+	  width: 33.33%;
+	}
+  
+	.col-s-5 {
+	  width: 41.66%;
+	}
+  
+	.col-s-6 {
+	  width: 50%;
+	}
+  
+	.col-s-7 {
+	  width: 58.33%;
+	}
+  
+	.col-s-8 {
+	  width: 66.66%;
+	}
+  
+	.col-s-9 {
+	  width: 75%;
+	}
+  
+	.col-s-10 {
+	  width: 83.33%;
+	}
+  
+	.col-s-11 {
+	  width: 91.66%;
+	}
+  
+	.col-s-12 {
+	  width: 100%;
+	}
+  }
+  
+  /* For desktop: */
+  @media only screen and (min-width: 768px) {
+	#menuvertical {
+	  max-width: max-content
+	}
+  
+	.col-1 {
+	  width: 8.33%;
+	}
+  
+	.col-2 {
+	  width: 16.66%;
+	}
+  
+	.col-3 {
+	  width: 25%;
+	}
+  
+	.col-4 {
+	  width: 33.33%;
+	}
+  
+	.col-5 {
+	  width: 41.66%;
+	}
+  
+	.col-6 {
+	  width: 50%;
+	}
+  
+	.col-7 {
+	  width: 58.33%;
+	}
+  
+	.col-8 {
+	  width: 66.66%;
+	}
+  
+	.col-9 {
+	  width: 75%;
+	}
+  
+	.col-10 {
+	  width: 83.33%;
+	}
+  
+	.col-11 {
+	  width: 91.66%;
+	}
+  
+	.col-12 {
+	  width: 100%;
+	}
+  }
+
